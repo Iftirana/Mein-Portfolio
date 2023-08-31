@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bilder/URL-ICON.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aa3eef13b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="bilder/logo.png" alt="logo" class="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Erfahrungen</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web-Entwickler</p>
+                <h1>Hi, ich bin <span>Rana Iftikhar Ahmed</span>
+                    <br>aus München</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------About----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bilder/bild.png" alt="bilder von Iftikhar">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"Herzlich willkommen auf mein Portfolio! <br>
+                        Ich bin ein Ausgebildeter
+                        Einzelhandelskaufmann. Mein solider mittlerer Reife 
+                        Schulabschluss und meine Ausbildung bildet die Grundlage für meine akademische und berufliche Reise. <br> <br>
+                        Doch mein Durst 
+                        nach Wissen und Wachstum hat mich dazu inspiriert, eine aufregende 
+                        Weiterbildung an der DBE Academy abzuschließen, wo ich mich intensiv 
+                        mit dem Bereich Full Stack Entwicklung auseinandergesetzt habe. <br> <br>
+                        Während meiner Zeit bei der DBE Academy hatte ich die Gelegenheit, meine Leidenschaft 
+                        für das Programmieren zu entfachen und umfassende Fähigkeiten in der Webentwicklung zu 
+                        erwerben. <br>
+                        Meine Erfahrungen umfassen das Arbeiten mit modernen Technologien, das 
+                        Erstellen von benutzerfreundlichen Seiten und die Umsetzung kreativer Lösungen, 
+                        um die Nutzererfahrung zu verbessern. <br> <br>
+                        Nun stehe ich an einem aufregenden Wendepunkt meiner Karriere, da ich mich darauf freue, 
+                        mein erweitertes Wissen und meine Fähigkeiten als leidenschaftlicher Entwickler in die Praxis umzusetzen. <br>
+                        Ich bin fest entschlossen, in der Welt der Webentwicklung Fuß zu fassen und innovative digitale 
+                        Lösungen zu schaffen. <br>
+                        Wenn Sie auf der Suche nach einem engagierten Teammitglied sind, das über
+                        frische Entwicklerkompetenzen verfügt und hoch motiviert ist, lade ich 
+                        Sie herzlich ein, meine Erfahrungen näher kennenzulernen. <br> <br>
+                        Vielen Dank, dass Sie vorbeischauen. Ich freue mich darauf, Ihre Bekanntschaft zu machen und zu 
+                        besprechen, wie ich einen wertvollen Beitrag zu Ihrem Team als Webentwickler leisten kann.</p>
+                    <div class="tag-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+<!-- <p class="tab-links">Experiance</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development:</span><br>Gute Kenntnisse in HTM, CSS, JavaScript, React & APIs </li>
+                            <li><span>Back-End Development:</span><br>Grundwissen in JS-Framework Jquery, Datenbankverwaltung wie MySQL, Apache, PhpMyadmin & MariaDB</li>
+                            <li><span>Softwarekenntnisse:</span><br>Benutzerwissen für GitHub, typo3, Docker, FileZilla-Client, SQLIte, XAMPP, WordPress und natürlich was nicht fehlen darf Visual Studio Code</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>März 2023-August 2023</span><br>Weiterbildung als Full Stack Web-Entwickler bei der DBE Academy</li>
+                            <li><span>2019-2020</span><br>Mittlere Reife von der Städtische Berufsschule für den Einzelhandel Mitte München</li>
+                            <li><span>August 2017-Februar 2020</span><br>Ausbildung als einzelhandelskaufmann 
+                                <br>bei Aldi Süd SE & Co.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------projekte--------------------->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">In diesen Bereichen könnte ich bereits Erfahrungen sammeln </h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Webentwicklung</h2>
+                    <p> In den letzten Monaten habe ich verschiedene 
+                        Webseiten entwickelt und gestylt  wo ich die 
+                        Möglichkeit hatte mein gelerntes wissen in 
+                        Bereich  HTML, CSS und JavaScript anzuwenden.
+                    </p>
+                    <a href="#portfolio">Zu den Projekten</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>    
+                    <h2>Web-Apps und Web-Design</h2>
+                    <p>Ich habe ein Wetter Web-App mit 
+                        Hilfe von  HTML, CSS, JavaScript und API 
+                        Anwendung  entwickelt.
+                        durch meine Projekte könnte ich ein gutes 
+                        gefühlt für Web-Design und App Entwicklung 
+                        entwickeln.
+                    </p>
+                    <a href="#portfolio">Zu den Projekten</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Full Stack Entwicklung</h2>
+                    <p>Themen mit denen ich mich schon auseinander setzen könnte:
+                        HTML5 , CSS3, JavaScript, Frontend-CSS-Framework Bootstrap, React,
+                        JS-Framework Jquery, Versionsverwaltung und Git, Virtualisierung mit Docker ,
+                        Skriptsprache PHP, relationales Datenbankverwaltung MySQL.
+                    </p>
+                    <a href="#contact">zu mein Zeugnissen</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!------------------------------meine projekte--------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projekte, die ich bis jetzt gebaut habe</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="bilder/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Wetter App</h3>
+                        <p>In dieser Web-App kann man stadtname
+                            eingeben und man bekommt aktuelle wetter 
+                            infos über dieses stadt angezeigt wie 
+                            Tempraturen, Windgeschwindigkeit, 
+                            Feuchtigkeit und weitere infos.</p>
+                        <a href="https://iftirana.github.io/test-wetter-app/" target="_blank" rel="noopener noreferrer"><img src="bilder/share-outline.svg" alt="link-icon"></a>
+                        <strong>probieren Sie es aus</strong>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bilder/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Mein Handwerker Website</h3>
+                        <p>Eine Simple Handwerker Seite für 
+                            ein Mittelständiges Unternehmen 
+                            mit ein gutem Design und
+                            Verlinkungen zur Impressum, 
+                            Datenschutz usw.</p>
+                        <a href="https://iftirana.github.io/test-handwerker-seite/" target="_blank" rel="noopener noreferrer"><img src="bilder/share-outline.svg" alt="link-icon"></a>
+                        <strong>Seite besuchen</strong>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bilder/work-4.PNG" alt="">
+                    <div class="layer">
+                        <h3>JavaScript Shopping Cart</h3>
+                        <p>Eine Online JavaScript Shopping Cart Seite,
+                            wo man Ware in Warenkorb
+                            legen kann, aus dem Warenkorb einzelne Artikel oder der 
+                            komplett Warenkorb löschen kann und man das Gesamtpreis sieht usw.
+                            </p>
+                        <a href="https://iftirana.github.io/Shopping-Cart/" target="_blank" rel="noopener noreferrer"><img src="bilder/share-outline.svg" alt="link-icon"></a>
+                        <strong>Seite besuchen</strong>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="bilder/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Restaurant Website</h3>
+                        <p>Eine Restaurant Website mit Homepage,  
+                            Animierte Speisekarte mit Bildern 
+                            und hover Effekt, damit man auf der 
+                            Rückseite die Inhalte sehen kann, 
+                            Auswahl Option zum Warenkorb hinzufügen 
+                            und paar Weire Seite (diese Seite wird weiter
+                            Entwickelt.) </p>
+                        <a href="https://iftirana.github.io/test-deeba-restaurant/speisekarte.html" target="_blank" rel="noopener noreferrer"> <img src="bilder/share-outline.svg" alt="link-icon"></a>
+                        <strong>Seite besuchen</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------form------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Meine Kontakt Daten</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ranaiftikharahmed2@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>01578 7916809</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Iftirana?tab=repositories" target="_blank" rel="noopener noreferrer">Github <br> <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/iftikhar-ahmed-rana/" target="_blank" rel="noopener noreferrer" >LinkedIn <br> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#">Instagram <br> <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="bilder/Lebenslauf23.pdf" download class="btn btn2">Lebenslauf runterladen</a>
+                    <a href="bilder/Zeugnisse.pdf" download class="btn btn2">Zeugnisse runterladen
+                    </a>
+                </div>
+                <div class="contact-right" >
+                    <form action="" method="post" name="contact-form">
+                        <input type="text" name="name" placeholder="Ihr Name" required>
+                        <input type="email" name="email" placeholder="Ihre Email" required>
+                        <textarea name="message" rows="6" placeholder="Ihre Nachricht"></textarea>
+                        <button type="submit" class="btn btn2">Senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="#">Impressum</a> 
+            <a href="#">Datenschutz</a>
+            <p> Copyright ©: Diese und damit verlinkte 
+                Seiten würden von Rana Iftikhar Ahmed 
+                zum zeigen seiner Fähigkeiten erstellt. </p>
+            
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
