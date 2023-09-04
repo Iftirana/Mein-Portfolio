@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto';
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
+    font-family: 'Roboto';
     background: #080808;
     color: #fff;
 }
@@ -68,8 +69,16 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff0000;
 }
+/*-------------scroll animation-  ------------*/
+.box{
+    transform: translateX(-400%);
+    transition: transform 0.6s ease;
+}
+.show{
+    transform: translateX(0%);
+}
 
-/*-------------------------about-----------------*/
+/*----------------------about-----------------*/
 #about{
     padding: 70px 0;
     color: #ababab;
@@ -87,6 +96,16 @@ nav ul li a:hover::after{
     margin-top: 60px;
     object-fit:cover;
     border-radius: 15px;
+    filter: blur(0px);
+}
+.loading-text{
+    font-size: 30px;
+    background-color: #ff000061;
+    margin-left: 26%;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    color: #ffffff;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -165,7 +184,8 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 20px;
 }
-.project-list div p{
+.project-list div p{    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: 300;
 }
@@ -322,7 +342,7 @@ form .btn2{
     text-align: center;
     padding: 10px 0;
     margin-top: 10px;
-    background: #151515;
+    background: #000000;
     font-weight: 400;
 }
 .copyright a{
@@ -334,7 +354,7 @@ form .btn2{
     margin-top: 30px;
 }
 nav .fa-solid{
-    color: #080808;
+    color: #ffffff;
     display: none;
 }
 /*----------------------------media Quary-------------------*/

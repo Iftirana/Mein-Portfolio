@@ -3,6 +3,52 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
+//for img blur in about section
+const loadText = document.querySelector('.loading-text')
+const bg = document.querySelector('.bg')
+
+let load = 0
+
+let int = setInterval(blurring, 30)
+
+function blurring() {
+    load++
+
+        if (load >99) {
+            clearInterval(int)
+        }
+
+        loadText.innerText = `${load}%`
+        loadText.style.opacity = scale(load, 0, 100, 1, 0)
+        bg.style.filter = `blur(${scale(load, 0, 100, 100, 0)}px)`
+    }
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+}
+
+//for animation of containers from left
+const boxes = document.querySelectorAll('.box')
+
+window.addEventListener('scroll', checkBoxes)
+
+checkBoxes()
+
+function checkBoxes() {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    console.log(window.innerHeight / 5 * 4)
+
+    boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top
+
+        if (boxTop < triggerBottom) {
+            box.classList.add('show');
+        } else {
+            box.classList.remove('show');
+        }
+    });
+}
+
 function opentab(tabname){
     for(tablink of tablinks){
         tablink.classList.remove("active-link");

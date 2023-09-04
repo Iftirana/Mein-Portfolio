@@ -6,6 +6,7 @@
     <title>Mein Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="bilder/URL-ICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <script src="https://kit.fontawesome.com/aa3eef13b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,10 +36,11 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="bilder/bild.png" alt="bilder von Iftikhar">
+                <div class="about-col-1 box">
+                    <div class="loading-text">0%</div>
+                        <img class="bg" src="bilder/bild.png" alt="bilder von Iftikhar">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2 box">
                     <h1 class="sub-title">About Me</h1>
                     <p>"Herzlich willkommen auf mein Portfolio! <br>
                         Ich bin ein Ausgebildeter
@@ -71,8 +73,8 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Front-End Development:</span><br>Gute Kenntnisse in HTM, CSS, JavaScript, React & APIs </li>
-                            <li><span>Back-End Development:</span><br>Grundwissen in JS-Framework Jquery, Datenbankverwaltung wie MySQL, Apache, PhpMyadmin & MariaDB</li>
-                            <li><span>Softwarekenntnisse:</span><br>Benutzerwissen für GitHub, typo3, Docker, FileZilla-Client, SQLIte, XAMPP, WordPress und natürlich was nicht fehlen darf Visual Studio Code</li>
+                            <li><span>Back-End Development:</span><br>Grundwissen in JS-Framework jQuery, Datenbankverwaltung wie MySQL, Apache, PhpMyadmin & MariaDB</li>
+                            <li><span>Softwarekenntnisse:</span><br>Gute Kenntnisse in GitHub, typo3, Docker, FileZilla-Client, SQLIte, XAMPP, WordPress und natürlich was nicht fehlen darf Visual Studio Code</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -90,9 +92,9 @@
     <!---------------------projekte--------------------->
     <div id="project">
         <div class="container">
-            <h1 class="sub-title">In diesen Bereichen könnte ich bereits Erfahrungen sammeln </h1>
+            <h1 class="sub-title box">In diesen Bereichen könnte ich bereits Erfahrungen sammeln </h1>
             <div class="project-list">
-                <div>
+                <div class="box">
                     <i class="fa-solid fa-code"></i>
                     <h2>Webentwicklung</h2>
                     <p> In den letzten Monaten habe ich verschiedene 
@@ -102,7 +104,7 @@
                     </p>
                     <a href="#portfolio">Zu den Projekten</a>
                 </div>
-                <div>
+                <div class="box">
                     <i class="fa-solid fa-crop"></i>    
                     <h2>Web-Apps und Web-Design</h2>
                     <p>Ich habe ein Wetter Web-App mit 
@@ -114,7 +116,7 @@
                     </p>
                     <a href="#portfolio">Zu den Projekten</a>
                 </div>
-                <div>
+                <div class="box" >
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Full Stack Entwicklung</h2>
                     <p>Themen mit denen ich mich schon auseinander setzen könnte:
@@ -132,9 +134,9 @@
 
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">Projekte, die ich bis jetzt gebaut habe</h1>
+            <h1 class="sub-title box">Projekte, die ich bis jetzt gebaut habe</h1>
             <div class="work-list">
-                <div class="work">
+                <div class="work box">
                     <img src="bilder/work-1.png" alt="">
                     <div class="layer">
                         <h3>Wetter App</h3>
@@ -147,7 +149,7 @@
                         <strong>probieren Sie es aus</strong>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work box">
                     <img src="bilder/work-2.png" alt="">
                     <div class="layer">
                         <h3>Mein Handwerker Website</h3>
@@ -160,7 +162,7 @@
                         <strong>Seite besuchen</strong>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work box">
                     <img src="bilder/work-4.PNG" alt="">
                     <div class="layer">
                         <h3>JavaScript Shopping Cart</h3>
@@ -174,7 +176,7 @@
                     </div>
                 </div>
                 
-                <div class="work">
+                <div class="work box">
                     <img src="bilder/work-3.png" alt="">
                     <div class="layer">
                         <h3>Restaurant Website</h3>
@@ -195,8 +197,8 @@
     <!---------------------------form------------------------->
     <div id="contact">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
+            <div class="row"> 
+                <div class="contact-left box">
                     <h1>Meine Kontakt Daten</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>ranaiftikharahmed2@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>01578 7916809</p>
@@ -209,7 +211,7 @@
                     <a href="bilder/Zeugnisse.pdf" download class="btn btn2">Zeugnisse runterladen
                     </a>
                 </div>
-                <div class="contact-right" >
+                <div class="contact-right box" >
                     <form action="" method="post" name="contact-form">
                         <input type="text" name="name" placeholder="Ihr Name" required>
                         <input type="email" name="email" placeholder="Ihre Email" required>
@@ -225,9 +227,8 @@
             <p> Copyright ©: Diese und damit verlinkte 
                 Seiten würden von Rana Iftikhar Ahmed 
                 zum zeigen seiner Fähigkeiten erstellt. </p>
-            
         </div>
-    </div>    
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
